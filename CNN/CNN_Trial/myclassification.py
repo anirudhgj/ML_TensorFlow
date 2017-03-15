@@ -107,7 +107,7 @@ def train_neural_network(x):
         print('probabilty:',pro)
         pre=prediction.eval({x:a,y:train_labels})
         print('prediction:',pre)
-        root='C:/Users/AniGJ/Desktop/ML_TENSORFLOW/CNN/image classification'
+        root='your images folder path(label names folder path)'
         dirlist = [ item for item in os.listdir(root) if os.path.isdir(os.path.join(root, item)) ]
         i=list(pro[0]).index(1)
         print(dirlist[i])
